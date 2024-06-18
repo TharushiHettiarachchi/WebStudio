@@ -12,8 +12,22 @@
 body {
     margin: 0;
     padding: 0;
+    scroll-behavior: smooth;
 }
 
+.onload-animation{
+    transform: translateY(-20px);
+    animation: fadeIn 2s forwards;
+    opacity: 0;
+    
+}
+
+@keyframes fadeIn {
+    to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
 .nav-bar-background {
     height: 60px;
     position: fixed;
