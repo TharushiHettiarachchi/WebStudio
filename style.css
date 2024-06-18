@@ -30,6 +30,8 @@ body {
 .nav-titles {
     font-weight: 400;
     transition-duration: 0.8s;
+    text-decoration: none;
+    color: black;
 }
 
 .nav-titles:hover {
@@ -69,7 +71,7 @@ body {
 
 .about-background {
     height: 500px;
-     padding-top: 20px;
+     padding-top: 100px;
     background-color: rgba(209, 208, 208, 0.296);
     background-image: url(resources/Facebook\ Post\ 940x788\ px\ \(1\).png);
     background-repeat: no-repeat;
@@ -79,7 +81,7 @@ body {
 }
 .services-background{
     height: auto;
-  padding-top: 50px;
+  padding-top: 100px;
   margin-bottom: 80px;
  
 }
@@ -147,7 +149,7 @@ box-shadow: none;
 .projects-background{
     height: 500px;
     background-color: rgba(189, 189, 189, 0.256);
-   padding-top: 30px;
+   padding-top: 100px;
 }
 .footer-background{
     padding: 10px;
@@ -230,6 +232,9 @@ box-shadow: none;
     justify-content: center;
     color: white;
     transition-duration: 0.8s;
+    text-decoration: none;
+    outline: none;
+    border: none;
 }
 .sub_button:hover{
 background-color: transparent;

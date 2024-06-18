@@ -20,11 +20,15 @@
                     <div class="row d-flex align-items-center justify-content-center">
                         <div class="col-1 col-lg-2  d-flex align-items-center"><img src="resources/icon.png"
                                 class="img-navbar" /></div>
-                        <div class="col-2 col-lg-1 d-flex align-items-center justify-content-center offset-3 offset-lg-6 nav-titles" href="#about">About
-                        </div>
-                        <a class="col-2 col-lg-1 d-flex align-items-center justify-content-center nav-titles" href="#services">Services</a>
-                        <a class="col-2 col-lg-1 d-flex align-items-center justify-content-center nav-titles" href="#projects">Projects</a>
-                        <a class="col-2 col-lg-1 d-flex align-items-center justify-content-center nav-titles" href="#contact">Contact</a>
+                        <a class="col-2 col-lg-1 d-flex align-items-center justify-content-center offset-3 offset-lg-6 nav-titles"
+                            href="#about">About
+                        </a>
+                        <a class="col-2 col-lg-1 d-flex align-items-center justify-content-center nav-titles"
+                            href="#services">Services</a>
+                        <a class="col-2 col-lg-1 d-flex align-items-center justify-content-center nav-titles"
+                            href="#projects">Projects</a>
+                        <a class="col-2 col-lg-1 d-flex align-items-center justify-content-center nav-titles"
+                            href="#contact">Contact</a>
                     </div>
                 </div>
                 <div class="col-12">
@@ -34,7 +38,7 @@
                             <p style="padding-left: 20px;">Your premier destination for innovative software solutions!
                                 We specialize in creating high-quality, user-friendly applications tailored to meet your
                                 business needs. Discover the future of software with WebStudio.</p>
-                            <div class="sub_button" style="margin-top: 30px;">Contact</div>
+                            <a href="#contact" class="sub_button" style="margin-top: 30px;">Contact</a>
                         </div>
                         <div class="landing-section2 col-12 col-lg-6"></div>
                     </div>
@@ -45,7 +49,13 @@
                             <p class="service-title-word">ABOUT</p>
                         </div>
                         <div class=" col-10 offset-1 col-lg-7 offset-lg-1 about-desc">
-                            Welcome to WebStudio, your premier destination for cutting-edge software solutions. At webStudio, we specialize in creating innovative, high-quality software that empowers businesses to thrive in the digital age. Our team of skilled developers and designers is dedicated to delivering custom-tailored solutions that meet the unique needs of each client. Whether you need a sophisticated web application, a dynamic e-commerce platform, or a sleek mobile app, we have the expertise and creativity to bring your vision to life. Join us at webStudio and let us help you turn your digital dreams into reality.
+                            Welcome to WebStudio, your premier destination for cutting-edge software solutions. At
+                            webStudio, we specialize in creating innovative, high-quality software that empowers
+                            businesses to thrive in the digital age. Our team of skilled developers and designers is
+                            dedicated to delivering custom-tailored solutions that meet the unique needs of each client.
+                            Whether you need a sophisticated web application, a dynamic e-commerce platform, or a sleek
+                            mobile app, we have the expertise and creativity to bring your vision to life. Join us at
+                            webStudio and let us help you turn your digital dreams into reality.
                         </div>
 
                     </div>
@@ -100,7 +110,7 @@
                                     <div
                                         class="project-buttons d-flex align-items-center justify-content-center flex-row">
                                         <div class="sub_button" style="margin: 5px;">View</div>
-                                        <div class="sub_button" style="margin: 5px;">Contact</div>
+                                        <a class="sub_button" style="margin: 5px;" href="#contact">Contact</a>
                                     </div>
                                 </div>
                             </div>
@@ -115,27 +125,33 @@
                         <div class="col-12 services-title">
                             <p class="service-title-word">CONTACT</p>
                         </div>
-                        <div class="col-8 offset-2 contact-sec-div">
-                            <div class="row">
-                                <p class="contact-label">Name</p>
-                                <input type="text" class="contact-input" />
+                        <form method="POST" name="Contact-WebStudio">
+
+
+                            <div class="col-8 offset-2 contact-sec-div">
+                                <div class="row">
+                                    <p class="contact-label">Name</p>
+                                    <input name="Name" type="text" class="contact-input" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-8 offset-2 contact-sec-div">
-                            <div class="row">
-                                <p class="contact-label">Email</p>
-                                <input type="text" class="contact-input" />
+                            <div class="col-8 offset-2 contact-sec-div">
+                                <div class="row">
+                                    <p class="contact-label">Email</p>
+                                    <input name="Email" type="text" class="contact-input" />
+                                </div>
                             </div>
-                        </div>
-                        <div class="col-8 offset-2 contact-sec-div">
-                            <div class="row">
-                                <p class="contact-label">Message</p>
-                                <textarea cols="10" rows="5" class="contact-input1"></textarea>
+                            <div class="col-8 offset-2 contact-sec-div">
+                                <div class="row">
+                                    <p class="contact-label">Message</p>
+                                    <textarea name="Message" cols="10" rows="5" class="contact-input1"></textarea>
+                                </div>
                             </div>
-                        </div>
-                     <div class="col-8 offset-2 d-flex align-items-center justify-content-center">
-                        <div class="sub_button" style="margin-top: 20px; width: 200px;">Submit</div>
-                     </div>
+                            <div class="col-8 offset-2" style="color: #D06BEA;" id="msg"></div>
+                            <div class="col-8 offset-2 d-flex align-items-center justify-content-center">
+                                <button type="submit" class="sub_button"
+                                    style="margin-top: 20px; width: 200px;">Submit</button>
+                            </div>
+                        </form>
                     </div>
 
                 </div>
@@ -145,7 +161,7 @@
                             <img src="resources/icon.png" class="img-footer" />
                             <img src="resources/title.png" class="img-footer" />
                         </div>
-                        <div class="col-10 offset-1 col-lg-3">
+                        <div class="col-10 offset-1 offset-lg-0 col-lg-3">
                             <div class="heading1-footer">Contact</div>
                             <p class="contact-p"><i class="bi bi-geo-alt-fill"></i> Colombo, Sri Lanka</p>
                             <p class="contact-p"><i class="bi bi-telephone-fill"></i> 0766365130</p>
@@ -157,7 +173,7 @@
 
                             </div>
                         </div>
-                        <div class="col-10 offset-1 col-lg-3">
+                        <div class="col-10 offset- col-lg-3 offset-lg-0">
                             <div class="heading1-footer">Explore</div>
                             <p class="contact-p"> About</p>
                             <p class="contact-p"> Services</p>
@@ -165,14 +181,16 @@
                             <p class="contact-p"> Contact</p>
 
                         </div>
-                        <div class="col-10 offset-1 col-lg-4">
+                        <div class="col-10 offset-1 offset-lg-0 col-lg-4">
                             <div class="heading1-footer">Subscribe</div>
                             <p class="sub-sent">Stay updated with the latest news and exclusive offers by subscribing to
                                 our newsletter.</p>
+                              
                             <input type="email" class="subs-input" />
                             <div class="col-12 sub-button-div">
-                                <div class="sub_button">Subscribe</div>
+                                <button class="sub_button">Subscribe</button>
                             </div>
+                       
                         </div>
                     </div>
                     <hr />
@@ -185,6 +203,36 @@
             </div>
         </div>
     </div>
+    <script>
+
+
+
+        const scriptURL = 'https://script.google.com/macros/s/AKfycbyF4eqVo11Whjg0EImzQs-Kyazz8jHp47FQhg-YPzdG0rqDPaAgj-sg_-5qa1qDFnBE/exec'
+        const form = document.forms['Contact-WebStudio']
+        const msg = document.getElementById("msg");
+
+        form.addEventListener('submit', e => {
+            e.preventDefault()
+            fetch(scriptURL, {
+                method: 'POST',
+                body: new FormData(form)
+            })
+                .then(response => {
+                    msg.innerHTML = "Your Message Sent Successfully !";
+
+                    setTimeout(function () {
+                        msg.innerHTML = ""
+                    }, 5000);
+                    form.reset();
+                })
+                .catch(error => console.error('Error!', error.message))
+        })
+
+
+
+       
+
+    </script>
 </body>
 
 </html>
